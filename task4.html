@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All-in-One Project</title>
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+        <h1>WELCOME TO MY PORTFOLIO</h1>   
+        
+      <h2>Rama Posina </h2> 
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <div class="about">
+    <h2>About Me</h2>
+    <p>Hello! myself Rama Posina. I'm currently pursuing my third btech in vishnu institute of technology.I’m a passionate developer focused on building responsive and interactive web apps.</p>
+ </div>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="one">
+        <h1>Netflix Clone :</h1>
+    <p> 📌 Netflix Clone
+I developed a responsive Netflix Clone as part of my front-end web development practice. This project replicates the layout and visual design of the official Netflix homepage using only HTML and CSS.
+
+Key Features:
+
+Clean and responsive layout
+
+Banner and movie section styling
+
+Flexbox and Grid-based structure
+
+Purpose:
+This clone helped me improve my understanding of responsive design principles and real-world UI layout techniques. It's a great example of how design can be brought to life through code.</p>
+    </div>
+    
+    <div class="two">
+        <h1>web-development intern :</h1>
+    <p>💼 Web Development Intern – ApexPlanet (Ongoing)
+I'm currently working as a Web Development Intern at ApexPlanet, where I'm building real-world web applications using HTML, CSS, and JavaScript.
+
+🛠 What I'm working on:
+
+Designing responsive websites and interfaces
+
+Creating dynamic pages using JavaScript
+
+Projects include portfolio sites, to-do apps, and product listings
+
+🎯 Skills Gained:
+
+Frontend structure and layout (Flexbox/Grid)
+
+DOM manipulation with JavaScript
+
+Code organization and live deployment
+
+This internship is helping me apply my knowledge practically while improving my design sense and development speed.</p>
+    </div>
+    <div class="project-tabs">
+      <button onclick="showTab('todo')">📝 To-Do App</button>
+      <button onclick="showTab('products')">🛍 Product Page</button>
+    </div>
+
+    <!-- TO-DO APP -->
+    <div id="todo" class="tab-content">
+      <h3>To-Do List with Local Storage</h3>
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- PRODUCT LISTING -->
+    <div id="products" class="tab-content" style="display:none;">
+      <h3>Product Listing with Filter and Sort</h3>
+      <div class="controls">
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="books">Books</option>
+        </select>
+
+        <select id="sortOption">
+          <option value="default">Sort by</option>
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+      <div id="productContainer" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact">
+    <h2>Contact Me!</h2>
+    <div class="inp">
+    <form class="contact-form">
+       
+    <input type="text"  id="name " placeholder="enter ur name">
+    <input type="text" id="num" placeholder="enter ur mobile number">
+    <input type="text"  id=" mail" placeholder="enter ur email">
+    </form>
+    </div>
+    <div class="but">
+    <button>send your message</button>
+  </div>
+  </div>
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Rama Posina</p>
+  </footer>
+
+  <!-- JS FILE -->
+  <script src="scripts4.js"></script>
+</body>
+</html>
